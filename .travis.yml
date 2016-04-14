@@ -1,21 +1,21 @@
 language: python - "2.7"
 env:
   global:
-    - secure: EFB0RjXzoKZBBDbRm7kC6jshz2QeTI1MoEwvimd+8+ianqRgHNIEoSNfwBiSV0DRjr/UdiTf+r1Qb/kHOdQEfkh9Flt8Q9/kE1WqZgWSuqmbQ1HRnXDaqR0WGAEgba1uEep8IHmUdDbepOSBl6D0nxGa04f/Hh1MXQ65jizf5QOkULOeizkOtllhMM9VtVVs+lcgO4/zVLjA0m/WlCpuiKGffZvQdHMeg8yd59x2TrdJ8QeNZjkBzKs+ghVGCfmwFo0FUGXzWlKuNiEhdbCXU3pWXSuEyTyuvoYOEwobrOQZHNugFRqi/z3cdHedS1a3HswPZ4ipk4LXhWDjK47vMOVESGDSBEZ2UJeSnzwil8xE9+gq27K5+0zyIz3PzgHe/TpaiIYggFA24xL4Q85+z3Kdkk/xHHCn2l0mHHw6PwPvz5/TP3qOY4lBsIout8EgwM4N/CBsmdYVZeOt02Y44fFJ82hR3kv3heubowQU0MMyHkkw5YCAGZtBGTOICtwmQnJO3PcCsAFzVr1ghJjWnX0G7c4LddKZORw+p3TqWamyo4F9OzNv0OH8VJ4tjrr5piBwDIVlrQ313K5NTbQ8EQ1VYfvq4wfvisp75vaQHDuCXSTpxUS9RMC8JVrpNfWtTTBw3A4a/bwNH3LWbRiUDbEXfCHGiRiWENP5vrvrpDI=
+  - secure: cpCI5fZTJkUTUyTu8KQqrT1Sp/iwuXW6dp6dZnN5a0WHTVF43we63f5xp3p6ScChRoYBUxUWKWejcxfPHlBcJTPaDDZTK1pwsDD0LwKagAxP1+DNNtlCmNUg/Ui0wSJpKve0yQaShZxqdG77BgSHpa3qHsQdJ6s1IbCztmILdIY5GQ0KdcpyxaxEjmmoA89IFXZ2ioP2cKpVd79wR6HjLdtcztVuM39uItQtj8BR4W7FwlJeyVtdWPtbHxLSCaZvTBSvyWr5N/RtMv8GBBceZ5E1O8wCYWJsAYo8q2IV0jNbwY48+4vjcOcmQgdWhPMV0f/bpOI6sGRi+qTjPqL/U0xAiPUiLsMBnybvGfYqqkyyav65oqko+OGFzZY7zgDeS4YQpBUA6BCR6D3gxAYTHtYuLKuC2zEzFLFE4pRCPE3DexLK7T75mXzjWdTVE2M1/1AEBWrmsA5t4lo4Vz/RjgJFiMvfGpfXWkgH6bVgUVnyiL3BykXobptoMjuhTuMnwLg4U92ai1y+LY8xJ3kDO9SClNmqO8S6VC6Lwz2aCiSuHJZt/YhHMdkbotOZ3feI7N7TDtk5QBvGT+PKyKCoOm5f5ITdtb6QH2yEwLMmarmBJu+cCGlsueBW4TvdbQoQAI4t4vsBe04fwdSFAP6ZuIMEX8V9ppyYU6y+vlwDn/M=
 warnings_are_errors: false
 before_install:
-  - wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
-  - chmod +x miniconda.sh
-  - "./miniconda.sh -b"
-  - export PATH=/home/travis/miniconda2/bin:$PATH
-  - conda update --yes conda
-  - sudo rm -rf /dev/shm
-  - sudo ln -s /run/shm /dev/shm
+- wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
+- chmod +x miniconda.sh
+- "./miniconda.sh -b"
+- export PATH=/home/travis/miniconda2/bin:$PATH
+- conda update --yes conda
+- sudo rm -rf /dev/shm
+- sudo ln -s /run/shm /dev/shm
 install:
-  - conda install --yes python="2.7" sphinx
-  - pip install --user git+https://github.com/lwrage/travis-sphinx.git
-  - pip install --user recommonmark
+- conda install --yes python="2.7" sphinx
+- pip install --user git+https://github.com/lwrage/travis-sphinx.git
+- pip install --user recommonmark
 script:
-  - travis-sphinx --nowarn --source source build
+- travis-sphinx --nowarn --source source build
 after_success:
-  - travis-sphinx deploy
+- travis-sphinx deploy
