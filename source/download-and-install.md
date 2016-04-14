@@ -1,5 +1,8 @@
 # Download and Installation     
 
+The latest OSATE release can be downloaded from 
+[here](http://aadl.info/aadl/osate/stable/latest/products/).
+
 ## Installation
 
 OSATE is available for Windows (32-bit and 64-bit), Mac OSX (64-bit),
@@ -38,24 +41,25 @@ extract the zip file to an empty target directory, e.g.,
 C:\\Tools\\OSATE. After extraction the target directory will contain
 some sub-directories and files, including osate.exe:
 
-![OSATE Directory Layout](images/osate-directory-layout.png
+![OSATE Directory Layout](images/osate-directory-layout.png 
 "OSATE Directory Layout")
 
 OSATE Directory Layout
 
 ## Download Locations
 
-### Stable Version
+### Stable Versions
 
-A new stable version is released every 3 months, after each major AADL
-event (mostly the committee meetings). You can install it from an
+A new stable version is released every 3 months. You can install it from an
 existing Eclipse installation using the update site or just by
 installing the complete product. The product is a fully integrated and
-tailored Eclipse environment with all OSATE functions. For now, the
-products are available for Windows, Linux and Mac OS X.
+tailored Eclipse environment with all OSATE functions. The products are 
+available for Windows, Linux and Mac OS X.
 
-  - **Product**: <http://www.aadl.info/aadl/osate/stable/>
-  - **Update sites**: <http://www.aadl.info/aadl/osate/stable/>
+All available versions can be found at the following locations.
+
+  - **Product**: <http://aadl.info/aadl/osate/stable/>
+  - **Update sites**: <http://aadl.info/aadl/osate/stable/>
 
 ### Testing Version
 
@@ -64,7 +68,6 @@ fixes but also some unstable code related to features being developed.
 While it might be useful to use it for some projects, please think about
 using it for production purpose due to potential unstable features.
 
-  - **Product**: <http://www.aadl.info/aadl/osate/testing/products/>
-  - **Update site**:
-    <http://www.aadl.info/aadl/osate/testing/update-site/>
+  - **Product**: <http://aadl.info/aadl/osate/testing/products/>
+  - **Update site**: <http://aadl.info/aadl/osate/testing/update-site/>
 
