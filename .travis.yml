@@ -15,14 +15,11 @@ before_install:
 
 install:
     - conda install --yes python="2.7" sphinx
-    - pip install --user travis-sphinx
+    - pip install --user git+https://github.com/lwrage/travis-sphinx.git
     - pip install --user recommonmark
 
 script:
     - travis-sphinx --source source build
 
 after_success:
-    - echo $TRAVIS_REPO_SLUG
-    - export TRAVIS_REPO_SLUG=osate/osate.github.io
-    - echo $TRAVIS_REPO_SLUG
-#    - travis-sphinx deploy
+    - travis-sphinx deploy
