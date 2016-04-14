@@ -19,7 +19,7 @@ install:
     - pip install --user recommonmark
 
 script:
-    - travis-sphinx --source source build
+    - travis-sphinx --nowarn --source source build
 
 after_success:
     - travis-sphinx deploy
