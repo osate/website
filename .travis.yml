@@ -14,6 +14,7 @@ before_install:
 install:
     - conda install --yes python="2.7" sphinx
     - pip install --user travis-sphinx
+    - pip install --user recommonmark
 
 script:
     - travis-sphinx --source source build
