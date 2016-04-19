@@ -14,7 +14,67 @@ page related to this version](Testing_Version "wikilink").
 
 ## Stable Releases
 
-### Version 2.2.0
+### Version 2.2.1
+
+#### Release
+
+  - **GIT tag**: 2.2.1-RELEASE-20160418
+  - **Release date**: April 18, 2016
+  - **Eclipse base version**: Mars.2
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.2.1/update-site>
+  - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.2.1/products>
+
+#### Notable Changes
+
+1.  We have included the EMFTA tool for fault tree analysis (see Help text).
+    The existing export to OpenFTA has been removed
+2.  OSATE now includes requirements specification language (ReqSpec) from
+    our ALISA project (see Help text)
+3.  Implemented approved language errata:
+    1.  Abstract features are allowed as mode transition triggers
+    2.  Added property Reference_Time
+	3.  Abstract features can reference classifiers in addition to prototypes:
+	
+            prototypes
+			  fp: feature;
+			  dt: data;
+			features
+			  -- feature is the prototype actual
+			  f1: prototype fproto;
+			  -- abstract feature referencing a data classifier
+			  f2: feature SomeDataType;
+			  -- abstract feature referencing a data prototype
+			  f3: feature dt;
+
+4.  Added textual representation of instance models. Convert AADL instance model
+    file to text via action "Generate Textual Instance" in AADL Navigator context 
+	menu
+5.  Added BIRT for report generation. An example report for requirements
+    traceability is included: Action "Requirements Tracing" in context menu in
+    the AADL Navigatior view, active for AADL packages, instance models, system
+    requirements and system goals.
+    The report sources are in plugin org.osate.reqtrace
+6.  Unnecessary plugins were removed to reduce download size
+7.  Updated Agree to version 2.1.3
+8.  The underlying Eclipse version has been updated to Mars.2
+
+#### Known Issues
+
+1.  Using the AADL Property View to edit property values results in bad
+    formatting
+
+#### Fixed Issues
+
+The full lists of closed issues for this release are available at
+
+<https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed>
+
+<https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed>
+
+<https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed>
+
+<https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed>
 
 #### Release
 
