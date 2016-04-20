@@ -41,7 +41,7 @@ page related to this version](Testing_Version "wikilink").
 			  dt: data;
 			features
 			  -- feature is the prototype actual
-			  f1: prototype fproto;
+			  f1: prototype fp;
 			  -- abstract feature referencing a data classifier
 			  f2: feature SomeDataType;
 			  -- abstract feature referencing a data prototype
@@ -75,6 +75,8 @@ The full lists of closed issues for this release are available at
 <https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed>
 
 <https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed>
+
+### Version 2.2.0
 
 #### Release
 
