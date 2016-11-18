@@ -7,6 +7,6 @@ warnings_are_errors: false
 install:
   - pip install --user -q -r requirements.txt
 script:
-  - sphinx-build -nW -b html -d build/doctrees source build/html
+  - sphinx-build -b html -d build/doctrees source build/html
 after_success:
   - bash deploy.sh
