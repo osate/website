@@ -18,8 +18,8 @@ git config user.email "lutz.wrage@gmail.com"
 
 git remote add upstream "https://$GH_TOKEN@github.com/osate/sandbox.git"
 git fetch upstream
-git reset upstream/master
+git reset upstream
 
-git add --all .
+git add -A .
 git commit -m "rebuild pages at ${rev}"
-git push upstream HEAD:master
+git push -q upstream HEAD:master
