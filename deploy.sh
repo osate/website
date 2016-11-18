@@ -16,7 +16,7 @@ git init
 git config user.name "Lutz Wrage"
 git config user.email "lutz.wrage@gmail.com"
 
-git remote add upstream "https://$GH_TOKEN@github.com/osate/sandbox.git"
+git remote add upstream "https://$GH_TOKEN@github.com/osate/osate.github.io.git"
 git fetch upstream
 git reset upstream/master
 
