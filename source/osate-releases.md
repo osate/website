@@ -45,7 +45,7 @@ This is a maintenance release that contains bug fixes and improvements.
   1. Fixed error model name resolution to conform to standard (#103, #114)
   2. Additional validation rule (#117)
 
-  #### Known Issues
+#### Known Issues
 
   1.  Using the AADL Property View to edit property values results in bad formatting.
 
