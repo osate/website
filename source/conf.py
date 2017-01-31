@@ -57,7 +57,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OSATE'
-copyright = u'2016, Carnegie Mellon University'
+copyright = u'2016-2017, Carnegie Mellon University'
 author = u'OSATE team'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -65,7 +65,7 @@ author = u'OSATE team'
 # built documents.
 #
 # The short X.Y version.
-version = u'2.2.1'
+version = u'2.2'
 # The full version, including alpha/beta/rc tags.
 release = u'2.2.1'
 
