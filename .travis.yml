@@ -1,12 +1,11 @@
-language: python
-  - "2.7"
+language: python - "2.7"
 env:
   global:
-  - secure: cpCI5fZTJkUTUyTu8KQqrT1Sp/iwuXW6dp6dZnN5a0WHTVF43we63f5xp3p6ScChRoYBUxUWKWejcxfPHlBcJTPaDDZTK1pwsDD0LwKagAxP1+DNNtlCmNUg/Ui0wSJpKve0yQaShZxqdG77BgSHpa3qHsQdJ6s1IbCztmILdIY5GQ0KdcpyxaxEjmmoA89IFXZ2ioP2cKpVd79wR6HjLdtcztVuM39uItQtj8BR4W7FwlJeyVtdWPtbHxLSCaZvTBSvyWr5N/RtMv8GBBceZ5E1O8wCYWJsAYo8q2IV0jNbwY48+4vjcOcmQgdWhPMV0f/bpOI6sGRi+qTjPqL/U0xAiPUiLsMBnybvGfYqqkyyav65oqko+OGFzZY7zgDeS4YQpBUA6BCR6D3gxAYTHtYuLKuC2zEzFLFE4pRCPE3DexLK7T75mXzjWdTVE2M1/1AEBWrmsA5t4lo4Vz/RjgJFiMvfGpfXWkgH6bVgUVnyiL3BykXobptoMjuhTuMnwLg4U92ai1y+LY8xJ3kDO9SClNmqO8S6VC6Lwz2aCiSuHJZt/YhHMdkbotOZ3feI7N7TDtk5QBvGT+PKyKCoOm5f5ITdtb6QH2yEwLMmarmBJu+cCGlsueBW4TvdbQoQAI4t4vsBe04fwdSFAP6ZuIMEX8V9ppyYU6y+vlwDn/M=
+  - secure: Cq77J7T2eGaq1n48yD4Cr4NF/G1F8ooZP4kkHL0ZcWZ/9nwNKdvrczBH/WW618bMYG/Ii3gNAgR/Ix4jpuCnhv+dZCQuL7q8Xcs78qeGHSGsW88DwG7UKXNXVS9Q3QcdL2tj+CKrMWVa7v6DYgcjTOQIfmbAinH48RRNyzAsq959gVrEFkRakQQ8TmkbCyNmf4mfT2jDXI/pfYbYVGkaaTe5sqF6MUUxS6TLdvwsxwwxwFt9IgBv+t+vBOWzhq2mr65wMih6EUg01CjNxX6JUDWPkW2M9KoRYdmmDD2Jdz8sJiqYwSiumHVldMHz4LqGPHRpnPdAUJZ6NpSTfoPmh03PMnlqG5G074mvE19oyCIVAC7yVrx0dpUTdtBAICmEZp6svTkRbs0MnpCCLdjGQ5Mo7aJ6QaiQrn//BsP5GMPsk+upCoIlhIdQ555D9FANwD+a6Rr2PBTNTC8/LrUcNOIRcpB0WBYrTvEYubpyAkbZ9T5Nfq4N8axCEeZnboppVo3nJ2QZdkXjFOslMzadSp3zZBsXzSX/ynNjoTQ9W935sokpquNpwpBZp004P6Ljy5EOnc6h7YPF+Qe0IU/oSNBNcY9I89L1Lk5Tnw8PQs9Heuabz1sPbz9/YHkgyPczk4Y4OEShnx+3lL1UTgwIv2MhpFHTSrxxktkgi8wjWFc=
 warnings_are_errors: false
 install:
-  - pip install --user -q -r requirements.txt
+- pip install --user -q -r requirements.txt
 script:
-  - sphinx-build -b html -d build/doctrees source build/html
+- sphinx-build -b html -d build/doctrees source build/html
 after_success:
-  - bash deploy.sh
+- bash deploy.sh
