@@ -26,7 +26,7 @@ cae2e11f58406181450a5fca0b5b69518172197df1c3075f55fcd55bd0fbc039  osate2-2.7.0-
  * This version of OSATE is based on Eclipse 2019-12, so the context menu in the outline view does no longer disappear.
  * The first start after installation is significantly faster (seconds instead of minutes).
  * The Ocarina Connector plugin is now a separate component that can be installed via `Help` -> `Install Additional OSATE Components`.
- * OSATE plugins and feature now use semantic versions. Developers of additional components can (and should!) make use of them to assure that comopnents are installed in a compatible OSATE version.
+ * OSATE plugins and feature now use semantic versions. Developers of additional components can (and should!) make use of them to assure that their components are installed in a compatible OSATE version.
 
 #### Fixed issues
 
